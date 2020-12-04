@@ -38,7 +38,7 @@ public class SnakeAnimate extends JPanel {
      * No-Arg constructor
      */
     public SnakeAnimate() {
-        URL resource = getClass().getResource("food.png");
+        URL resource = getClass().getResource("assets/food.png");
         try {
             image = ImageIO.read(resource);
         } catch (IOException e) {
