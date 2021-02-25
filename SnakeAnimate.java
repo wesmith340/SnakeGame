@@ -62,11 +62,6 @@ public class SnakeAnimate extends JPanel {
         super.paintComponent(g);
 
         if (started) {
-            /*
-            g.setColor(food.color());
-            g.drawRect(food.x(), food.y(), food.diameter(), food.diameter());
-            g.fillRect(food.x(), food.y(), food.diameter(), food.diameter());
-            */
             g.drawImage(image,food.x(),food.y(),food.diameter(),food.diameter(), this);
 
             Iterator it = segments.iterator();
@@ -76,8 +71,6 @@ public class SnakeAnimate extends JPanel {
                 g.drawOval(segment.x(), segment.y(), segment.diameter(), segment.diameter());
                 g.fillOval(segment.x(), segment.y(), segment.diameter(), segment.diameter());
             }
-
-
 
             g.setColor(eyeColor);
             Segment head = segments.get(0);
@@ -138,7 +131,6 @@ public class SnakeAnimate extends JPanel {
         }
         g.setColor(Color.RED);
         g.drawRect(0, 0, dim.width-1, dim.height-1);
-
     }
 
     /**
